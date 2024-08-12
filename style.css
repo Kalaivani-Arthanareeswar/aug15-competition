@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(120deg,orangered,white,green);
+    
+}
+ .logo
+{
+    margin:20px;
+}
+.profile li
+{
+    color:#0984e3;
+    cursor: pointer;
+    font-weight: 500;
+    font-size:14px;
+    transition: all 0.2s ease;
+}
+.profile li a
+{
+    text-decoration: none;
+}
+.profile li:hover
+{
+    opacity: 0.65;
+}
+.form
+{
+    text-align: center;
+    border-radius: 10px;
+}
+nav
+{
+    background-color:green;
+}
+nav ul
+{
+    transform: skew(-25deg);
+}
+nav ul li
+{
+    background-color: orangered;
+    box-shadow:0px 0px 2px 2px rgba(248, 247, 247, 0.9);
+    text-transform:uppercase;
+    font-weight:600;  transition:all 0.2s linear;
+    padding: 3px 7px;
+}
+nav ul li:hover
+{
+    background-color: #0984e3;
+    
+}
+nav ul li:first-child
+{
+    border-radius:7px 0 0 7px;
+}
+nav ul li:last-child
+{
+    border-radius: 0 7px 7px 0;
+}
+.a1 h4
+{
+    font-weight: 600;
+    color:green;
+    border-bottom: 3px solid #0984e3;
+    max-width:343px;padding-bottom:7px ;
+}
+.a2 h4
+{
+    font-weight: 600;
+    color:green;
+    border-bottom: 3px solid #0984e3;
+    max-width:200px;padding-bottom:7px ;
+}
+.a1 p,.a2 p
+{
+    line-height:28px;
+    letter-spacing: 1px;
+    text-indent:30px;text-transform: capitalize;text-align: justify;
+    font-size: 16px;
+}
+footer
+{
+    background-color:#0984e3;
+}
+footer .down-part ul
+{
+    list-style-type: none;
+}
+footer .down-part ul
+{
+    color: white;
+}
+footer .down-part ul li a
+{
+    color: white;
+    font-size:14px;
+    text-decoration: none;
+}
+footer .down-part ul li a:hover 
+{
+    opacity: 0.65;
+    text-decoration:underline;
+}
+footer .last
+{
+    height:50px;
+    width:100%;background-color:rgb(66, 219, 66);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo ul
+{
+    list-style-type: none;
+    margin-top: 16px;
+}
+.logo ul li
+{
+    padding:5px;
+}
+.logo i
+{
+    font-size:20px;
+}
+footer .last p
+{
+    color:white;
+    font-size: 14px;
+    text-align: center;padding: 10px;
+}
