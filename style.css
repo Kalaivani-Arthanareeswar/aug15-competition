@@ -10,11 +10,12 @@ body
     font-weight: 400;
     font-style: normal;
     background: linear-gradient(120deg,orangered,white,green);
+    box-sizing: border-box;
     
 }
- .logo
+.logos
 {
-    margin:20px;
+    margin:20px 0px 20px 40px;
 }
 .profile li
 {
@@ -112,28 +113,29 @@ footer .down-part ul li a:hover
 }
 footer .last
 {
-    height:50px;
-    width:100%;background-color:rgb(66, 219, 66);
+    height:auto;
+    width:100vw;
+    background-color:green;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.logo ul
+.social ul
 {
     list-style-type: none;
     margin-top: 16px;
 }
-.logo ul li
+.social ul li
 {
     padding:5px;
 }
-.logo i
+.social i
 {
-    font-size:20px;
+    font-size:22px;
 }
 footer .last p
 {
     color:white;
-    font-size: 14px;
-    text-align: center;padding: 10px;
+    font-size:15px;
+    text-align: center;padding:8px;
 }
