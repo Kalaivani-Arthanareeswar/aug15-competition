@@ -60,7 +60,7 @@ h1
 {
     outline: none;
 }
-.input-group.error 
+.input-group #display
 {
 color:red;
 font-size: 13px;

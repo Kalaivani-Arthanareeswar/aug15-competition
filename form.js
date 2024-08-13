@@ -13,8 +13,7 @@ form.addEventListener('submit',(e)=>
         }
         if(validateInputs())
         {
-            alert('Congratulations! Login Success!');
-            window.location.assign("https://www.india.gov.in/");
+            alert('Congratulations! You have LoggeIn Successfully!');window.location.assign('index.html');
         }
     })
 
@@ -39,12 +38,12 @@ form.addEventListener('submit',(e)=>
         if(emailVal==='')
         {
             success=false;
-            setError(email,'Email is required');
+            setError(email,'*Email is required*');
         }
         else if(!validateEmail(emailVal))
         {
             success=false;
-            setError(email,'Please Enter a valid Email');  
+            setError(email,'*Please Enter a valid Email*');  
         }
         else
         {
@@ -55,12 +54,12 @@ form.addEventListener('submit',(e)=>
 
             {
                 success=false;
-                setError(password,'Password is required')
+                setError(password,'*Password is required*')
             }
             else if(passwordVal.length<8)
             {
                 success=false;
-                setError(password,'Password must be atleast in 8 chracters')
+                setError(password,'*Password must be atleast in 8 chracters*')
             }
             else
             {
@@ -69,13 +68,13 @@ form.addEventListener('submit',(e)=>
         if(cpasswordVal==='')
             {
                 success=false;
-                setError(cpassword,'Confirm password is required')
+                setError(cpassword,'*Confirm password is required*')
 
             }
             else if(cpasswordVal!==passwordVal)
             {
                 success=false;
-                setError(cpassword,'Password does not match');
+                setError(cpassword,'*Password does not match*');
             }
             else
             {
@@ -88,7 +87,7 @@ form.addEventListener('submit',(e)=>
     {
         const inputGroup = element.parentElement;
         const errorElement = inputGroup.querySelector('#display')
-        errorElement.innertext = message;
+        errorElement.innerHTML= message;
         inputGroup.classList.add('error');
         inputGroup.classList.remove('success');
     }
@@ -98,7 +97,7 @@ form.addEventListener('submit',(e)=>
     {
         const inputGroup = element.parentElement;
         const errorElement = inputGroup.querySelector('#display');
-        errorElement.innertext ='';
+        errorElement.innerHTML='';
         inputGroup.classList.add('success');
         inputGroup.classList.remove('error');     
     }
