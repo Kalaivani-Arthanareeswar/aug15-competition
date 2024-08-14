@@ -13,7 +13,8 @@ form.addEventListener('submit',(e)=>
         }
         if(validateInputs())
         {
-            alert('Congratulations! You have LoggeIn Successfully!');window.location.assign('index.html');
+            alert('Congratulations! You have Logged In Successfully!');
+            window.location.assign('index.html');
         }
     })
 
